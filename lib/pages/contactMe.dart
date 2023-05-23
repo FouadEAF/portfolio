@@ -25,7 +25,7 @@ class ContactMe_Page extends StatelessWidget {
 //===================================Head=======================================
             Expanded(flex: 1, child: HeaderPages()),
 //===================================Body=======================================
-            Expanded(flex: 4, child: BodyContactMe()),
+            Expanded(flex: 4, child: SingleChildScrollView(child: BodyContactMe())),
 //===================================Foot=======================================
             FooterPages(),
           ],

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, camel_case_types, prefer_const_constructors_in_immutables
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names, camel_case_types, prefer_const_constructors_in_immutables, file_names
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -41,7 +41,7 @@ class FollowMe_Page extends StatelessWidget {
         Expanded(
             flex: 1,
             child: CircleAvatar(
-              minRadius: 50.0,
+              minRadius: 100.0,
               maxRadius: 400.0,
               backgroundImage: AssetImage(DarkMode.imgProfil),
             )),

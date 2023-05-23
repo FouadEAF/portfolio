@@ -1,14 +1,9 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:js';
+// ignore_for_file: prefer_const_constructors, camel_case_types, prefer_const_constructors_in_immutables, non_constant_identifier_names
 
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'package:portfolio/tools/myWidgets.dart';
 import 'package:portfolio/tools/themes.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class WhoIAm_page extends StatelessWidget {
   WhoIAm_page({Key? key}) : super(key: key);
