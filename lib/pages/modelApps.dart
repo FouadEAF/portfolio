@@ -44,7 +44,6 @@ class BodyModel extends StatelessWidget {
       radius: Radius.circular(16),
       thickness: 7,
       child: SingleChildScrollView(
-          physics: AlwaysScrollableScrollPhysics(),
           child: Wrap(
             children: [
               tiket('images/model/Ex_(14).jpg'),
@@ -71,18 +70,16 @@ class BodyModel extends StatelessWidget {
   }
 
   Widget tiket(String lien) {
-    return Expanded(
-      child: Container(
-        width: 500.0,
-        height: 500.0,
-        padding: EdgeInsets.all(5.5),
-        decoration: BoxDecoration(),
-        child: Image.asset(
-          lien,
-          fit: BoxFit.fill,
-        ),
-        //Padding(padding: EdgeInsets.only(bottom: 10.0)),
+    return Container(
+      width: 500.0,
+      height: 500.0,
+      padding: EdgeInsets.all(5.5),
+      decoration: BoxDecoration(),
+      child: Image.asset(
+        lien,
+        fit: BoxFit.fill,
       ),
+      //Padding(padding: EdgeInsets.only(bottom: 10.0)),
     );
   }
 }

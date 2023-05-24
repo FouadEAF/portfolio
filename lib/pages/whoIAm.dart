@@ -60,7 +60,7 @@ class WhoIAm_page extends StatelessWidget {
                       height: 15.0,
                     ),
                     Text(
-                      'Developper EAF\n A Software engineer, developper and a '
+                      ' A Software engineer, developper and a '
                       'freelancer of Flutter and VBA as expert of Mirosoft office '
                       'pack also a Data analytics (Power BI, i2) i learned many '
                       'language progrmmaing as Python, C, Kotlin, Java, Pascal, SQL ...',

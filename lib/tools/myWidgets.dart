@@ -1,4 +1,4 @@
-// ignore_for_file: sort_child_properties_last, must_be_immutable, non_constant_identifier_names
+// ignore_for_file: sort_child_properties_last, must_be_immutable, non_constant_identifier_names, unused_field
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -44,6 +44,8 @@ class HeaderPages extends StatelessWidget {
               PageName: 'ContactMe',
             ),
             Spacer(),
+            
+            //SizedBox(width: 5.0,),
             Image.asset(
               'images/EAFLogo2.jpg',
               width: 50.0,
@@ -54,12 +56,21 @@ class HeaderPages extends StatelessWidget {
             ),
           ],
         ),
+       /* Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Theme mode : ',
+             style: TextStyle(color: DarkMode.fontColor, fontWeight: FontWeight.bold),),
+            SwitchMode(),
+          ],
+        ),
+        */
         Divider(
           color: Color(0xff7C7A7A),
         ),
       ],
     );
-  }
+  } 
 }
 
 class HeadButton extends StatelessWidget {
@@ -80,7 +91,7 @@ class HeadButton extends StatelessWidget {
       child: Text(
         Title,
         style: GoogleFonts.frijole(
-          color: DarkMode.fontColor,
+          color: _SwitchModeState.etat == true ?DarkMode.fontColor :LightMode.fontColor,
           fontWeight: FontWeight.bold,
           fontSize: 13.0,
         ),
@@ -152,5 +163,33 @@ class FollowButton extends StatelessWidget {
     if (!await launchUrl(Uri.parse(Link))) {
       throw Exception('Could not launch $Link');
     }
+  }
+}
+
+//SwitchMode() == true ?DarkMode.fontColor :LightMode.fontColor
+class SwitchMode extends StatefulWidget {
+  SwitchMode({super.key});
+  @override
+  State<SwitchMode> createState() => _SwitchModeState();
+  
+}
+
+class _SwitchModeState extends State<SwitchMode> {
+  bool light = true;
+  static bool? etat;
+  @override
+  Widget build(BuildContext context) {
+    return Switch(
+      value: light,
+      activeColor: DarkMode.fontColor,
+      onChanged: (bool value) {
+        setState(() {
+          light = value;
+         
+          etat = light;
+           print(etat);
+        });
+      },
+    );
   }
 }

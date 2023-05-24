@@ -38,13 +38,13 @@ class FollowMe_Page extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Expanded(
+      /*  Expanded(
             flex: 1,
             child: CircleAvatar(
               minRadius: 100.0,
               maxRadius: 400.0,
               backgroundImage: AssetImage(DarkMode.imgProfil),
-            )),
+            )),*/
         SizedBox(
           height: 30.0,
         ),
@@ -70,7 +70,7 @@ class FollowMe_Page extends StatelessWidget {
           IconName: FontAwesomeIcons.github,
           BackColor: Color(0xff7C7A7A),
           Link: 'https://github.com/FouadEAF',
-        ), //FaIcon(FontAwesomeIcons.github)
+        ),
         SizedBox(
           height: 10.0,
         ),
