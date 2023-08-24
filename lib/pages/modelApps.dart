@@ -46,8 +46,8 @@ class BodyModel extends StatelessWidget {
       child: SingleChildScrollView(
           child: Wrap(
             children: [
-              tiket('images/model/Ex_(14).jpg'),
-              tiket('images/model/Ex_(15).jpg'),
+              tiket('assets/images/model/Ex_(14).jpg'),
+              tiket('assets/images/model/Ex_(15).jpg'),
               tiket('images/model/Ex_(13).jpg'),
               tiket('images/model/Ex_(7).jpg'),
               tiket('images/model/Ex_(17).png'),
